@@ -37,10 +37,10 @@ function sliceColumn(array, startIndex, endIndex) {
   return array;
 }
 
-function spliceColumn(array, startIndex, endIndex) {
+function spliceColumn(array, startIndex, columnCount) {
   array.map(
     function(val) {
-      return val.splice(startIndex, endIndex);
+      return val.splice(startIndex, columnCount);
     });
 }
 
